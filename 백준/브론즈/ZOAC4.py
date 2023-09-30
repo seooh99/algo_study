@@ -1,8 +1,7 @@
 H, W, N, M = map(int, input().split())
 
-i = (H +1) // (N+1)
-j = (W+1) // (M+1)
-
-result = i*j
-
-print(result)
+import math
+a = math.ceil(H/(N+1))
+b = math.ceil(W/(M+1))
+answer = a*b
+print(answer)
